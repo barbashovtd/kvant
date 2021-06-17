@@ -73,7 +73,7 @@ class Student(Model):
     second_name = CharField("Фамилия", max_length=64)
     first_name = CharField("Имя", max_length=64)
     patronymic = CharField("Отчество", max_length=64, blank=True)
-    qr_code = ImageField(upload_to="qr/%Y", allow_empty_file=True)
+    qr_code = ImageField(allow_empty_file=True)
     age = IntegerField("Возраст", blank=True, null=True)
     last_ate = DateTimeField(
         "Последнее посещение столовой",
